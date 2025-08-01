@@ -1,0 +1,181 @@
+body { /*ngedit body di abeng.html */
+    background-color: #f1eedc;
+    background-image: url('gtude.png'); /*biar ngga polos doang, saya kasih gambar di backgroundnya*/
+    color: #333;
+    padding: 2rem; /*padding itu buat ngasih jarak antara teks dengan pinggir layar*/
+    display: flex; /*dipakai biar isi di dalam body jadi di tengah*/
+    flex-direction: column; /*buat ngatur arah dari isi di dalam body biar jadi vertikal dari atas ke bawah*/
+    align-items: center; /*biar isi di dalam body jadi di tengah*/
+    font-size: 13px; 
+}
+
+#imgHeader { /*dari id di img*/
+    width: 50%; /*ngatur ukuran gambar header biar ngga terlalu besar*/
+    max-width: 50%; /*ngatur ukuran maksimal gambar biar ngga terlalu besar*/
+    border-radius: 4px; /*ngasih sudut melengkung pada gambar*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*ngasih bayangan pada gambar*/
+    cursor: pointer; /*biar gambar bisa diklik*/
+}
+
+.links { /*dari class div links*/
+    display: flex; /*biar link gampang di atur, biar bisa nagtur jarak2 antar link kedua*/
+    justify-content: center; /*biar link bisa di tengah*/
+    gap: 20px; /*ngatur jarak antar link*/
+    flex-wrap: wrap; /*dipakai supaya barisan anak-anak flex nggak maksa muat di satu baris, biar layout tetap rapi di semua ukuran layar.*/
+    margin-top: 20px; /*ngatur jarak antara gambar header dengan link*/
+}
+
+.link { /*dari class link a href*/
+    text-decoration: none; /*ngilangin garis bawah pada link*/
+    padding: 10px 20px; /*ngatur jarak antara teks dengan pinggir link*/
+    border-radius: 5px; /*ngasih sudut melengkung pada link*/
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+    color: #e7c159;
+    border: 2px solid transparent; /*ngasih border/outline pada link, tapi warnanya transparan biar ngga kelihatan*/
+    transition: all 0.3s ease-in-out; /*ngasih efek transisi pada link, biar saat hover ada efek smooth*/
+}
+
+#LinkIg:hover, #LinkSpo:hover { /*dari id link instagram dan spotify*/
+    border-color: #f8d27a;
+    background-color: #f8d27a;
+    color: #ffffff;
+}
+
+p5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5; /*ngatur jarak antar baris*/
+    margin-top: 20px;
+    text-align: left; /*ngatur teks supaya rata kiri*/
+}
+
+h1, h2, h3, h4 {
+    justify-content: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #5c9ad0;
+}
+
+.gambar { /*dari class div gambar*/
+    display: flex; /*ngatur gambar supaya bisa diatur jaraknya*/
+    gap: 20px;
+    justify-content: left; /*ngatur gambar supaya rata kiri*/
+    flex-wrap: wrap; /*ngatur gambar supaya bisa pindah baris jika terlalu banyak*/
+}
+
+img#imgAkawuri, img#imgJurnal { /*dari id gambar akawuri dan jurnal*/
+    flex: 1 1 30%; /*ngatur gambar supaya bisa fleksibel, 1 boleh melebar klo ada ruang kosong, 1 boleh menyusur klo ruang sempit, 30% ukuran awal gambar*/
+    width: 10%; 
+    max-width: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0; /*ngatur jarak antara gambar*/
+    object-fit: cover; /*buat ngatur cara gambar atau video mengisi kotak*/
+    cursor: pointer;
+}
+
+img#imgMenang { /*dari id gambar menang*/
+    flex: 1 1 30%;
+    width: 10%;
+    max-width: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    object-fit: cover;
+}
+
+p1,p2,p3,p4,p6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#seracilry1 { /*dari id seracilry1*/
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #83ccf1;
+    border: 2px solid;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #5c9ad0;
+    text-align: center;
+}
+
+p7,p8 {
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.akawuriasta { /*dari class akawuriasta, halaman akawuri*/
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #59b3e7;
+    border: 2px solid;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #5c9ad0;
+    text-align: left;
+}
+
+p9 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: left;
+}   
+
+.commetlink { /*dari class commetlink, dari halaman jurnal*/
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #59b3e7;
+    border: 2px solid;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #5c9ad0;
+    text-align: left;
+}
+
+.mancrush { /*dari class div mancrush, dari halaman bf*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.a_man { 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
